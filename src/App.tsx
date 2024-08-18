@@ -81,6 +81,7 @@ function App() {
       <button onClick={() => addNewTodo(new Todo(input.toUpperCase(),description,todoCounter, false))}>Add new todo</button>
       <button onClick={() => showOnlyDoneTodos()}>Show Done Todos</button>
       <button onClick={() => showAllTodos()}>Show All Todos</button>
+      <button>Test</button>
       
       <div className='todos-div'>
       <ul className='todos-ul'>
