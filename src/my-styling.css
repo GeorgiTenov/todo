@@ -1,0 +1,86 @@
+.todos-div{
+    background-color: #4a4b4b;
+    box-shadow: 10px solid salmon;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+  }
+
+  .todos-li{
+    background-color: rgb(44, 51, 41);
+    border-bottom-right-radius: 10em;
+    
+  }
+
+  .todos-li-done{
+    background-color: rgb(123, 183, 32);
+    border-bottom-right-radius: 10em;
+  }
+
+
+  .todos-ul{
+    position: relative;
+    list-style: none;
+    width: 80%;
+  }
+
+  .element-title{
+    text-decoration: underline;
+    color: #d71717;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .element-id{
+    color: orange;
+    background-color: rgb(241, 100, 6);
+  }
+
+  .element-done{
+    color: rgb(93, 140, 24);
+    text-decoration: line-through;
+  }
+
+  ul li{
+    position:relative;
+  }
+
+  ul li:hover{
+    left: 10px;
+    cursor: pointer;
+  }
+
+  ul li::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0,0, 0, 0);
+    transition: 1s;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+  }
+  ul li:hover::before{
+    transition: 0s;
+    
+    box-shadow: 10px 10px 10px gray;
+    background: rgba(0,0, 0, 1);
+    transform: translate(50%,50%);
+    width: 0;
+    height: 0;
+  }
+
+  .element-description{
+    width: 90%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    transition: 2.5s;
+  }
+
+  .element-description:hover{
+    background-color: #d71717;
+    transition: 1s;
+  }
+

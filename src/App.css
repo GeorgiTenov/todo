@@ -13,6 +13,10 @@
   }
 }
 
+.todos-div{
+  background-color: #4d9e80;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
